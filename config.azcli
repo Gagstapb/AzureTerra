@@ -1,0 +1,6 @@
+az login
+az group delete --name AZ028 --location westus
+az appservice plan create --name AZ028  --resource-group AZ028 --is-linux
+az web app create --name AZ028 --plan AZ028 --runtime "node|8.1"
+az webapp list-runtimes
+az webapp browse --name AZ028

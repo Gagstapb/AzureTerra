@@ -1,0 +1,2 @@
+Get-Process
+Clear-Host
